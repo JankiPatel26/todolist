@@ -15,7 +15,8 @@ node app.js
 
   
 ## Heroku
-- Create Heroku Account and download heroku CLI [https://devcenter.heroku.com/articles/getting-started-with-nodejs]()
+- Create Heroku Account and download heroku CLI  
+[https://devcenter.heroku.com/articles/getting-started-with-nodejs]()
 - set up Heroku CLI in local
 - Push your own app in Heroku
 ```text
