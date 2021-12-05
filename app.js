@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin:admin@cluster0.mj8qx.mongodb.net/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = {
   name: String
@@ -52,7 +52,7 @@ app.get("/", function(req, res) {
         if (err) {
           console.log(err);
         } else {
-          console.log("Successfully savevd default items to DB.");
+          console.log("Successfully saved default items to DB.");
         }
       });
       res.redirect("/");
@@ -135,6 +135,12 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+let port =process.env.PORT
+if (port == null || port === ""){
+  port = 3000
+}
+
+app.listen(port ,function() {
+  console.log("Server started successfully");
 });
+
