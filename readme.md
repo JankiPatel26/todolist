@@ -23,7 +23,7 @@ node app.js
 git push heroku master
 ```
 
-![alt text][logo]
+![To-Do screenshot][logo]
 
-[logo]: https://github.com/JankiPatel26/todolist/blob/master/todolist.png "Logo Title Text 2"
+[logo]: https://github.com/JankiPatel26/todolist/blob/master/todolist.png "To do List App"
 
